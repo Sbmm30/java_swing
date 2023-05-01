@@ -260,7 +260,7 @@ public class Vista extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnCalcular;
     public javax.swing.JButton btnNuevo;
-    private javax.swing.JComboBox<String> dbCategoria;
+    public javax.swing.JComboBox<String> dbCategoria;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
