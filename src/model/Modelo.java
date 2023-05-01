@@ -9,13 +9,12 @@ package model;
  * @author sbmm30 https://github.com/sbmm30
  */
 public class Modelo {
-    private int     categoria;
-    private double  promedio;
-    private double  pensionActual;
-    private double  pensionNueva;    
-    private double  descuento;
-    
-    // constructor?
+
+    private int categoria;
+    private double promedio;
+    private double pensionActual;
+    private double pensionNueva;
+    private double descuento;
 
     public int getCategoria() {
         return categoria;
@@ -56,7 +55,7 @@ public class Modelo {
     public void setDescuento(double descuento) {
         this.descuento = descuento;
     }
-    
+
     public double calcularPensionActual() {
         switch (this.categoria) {
             case 0:
@@ -76,7 +75,7 @@ public class Modelo {
         }
         return this.pensionActual;
     }
-    
+
     public double calcularDescuento() {
         if (this.promedio >= 0.00 && this.promedio < 14.00) {
             this.descuento = 0;
@@ -91,12 +90,12 @@ public class Modelo {
         }
         return this.descuento;
     }
-    
+
     public double calcularPensionNueva() {
         this.pensionNueva = this.pensionActual - this.descuento;
         return this.pensionNueva;
     }
-    
+
     public void ejecutarOperaciones() {
         calcularPensionActual();
         calcularDescuento();
