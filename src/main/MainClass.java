@@ -6,7 +6,7 @@ package main;
 
 /**
  *
- * @author DARLYN
+ * @authorsbmm30 https://github.com/sbmm30
  */
 public class MainClass {
 
